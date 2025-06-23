@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Details</title>
+        
+    <link rel="stylesheet" href="emp.css">
+    
+</head>
+<body>
+
+<h1>Employee Details</h1>
+<div class="Search">
+
+  <input type="text" id="searchInput" placeholder="Search By E_name" oninput="renderTable()"  />
+
+  <select id="sortSelect" onchange="renderTable()">
+    <option value="">Sort By Salary</option>
+    <option value="Ascending">Salary Ascending</option>
+    <option value="Descending">Salary Descending</option>
+  </select>
+</div>
+
+
+    <table>
+
+    <thead>
+        <tr>
+          <th>E_id</th>
+          <th>E_name</th>
+          <th>Salary</th>
+          <th>Department</th>
+          <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="employeeTableBody"></tbody>
+    </table>
+    
+
+    <script src="emp.js"></script>
+
+  </body>
+
+</html>
+
+
+    
